@@ -7,7 +7,7 @@ TEMPLATE_URL = "https://raw.githubusercontent.com/microprediction/badminton/mast
 
 import time
 
-def live():
+def get_fake_live_data():
     """ Get 'live' data from a replay of badminton game """
     k   = int((time.time() - ORIGIN) / (INTERVAL * 60))
     url = TEMPLATE_URL.replace('FRAME',str(k).zfill(num_digits))
@@ -18,4 +18,4 @@ def live():
 
 
 if __name__=='__main__':
-    print(live())
+    print(get_fake_live_data())
