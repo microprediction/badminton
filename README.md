@@ -1,2 +1,2 @@
 # badminton
-Badminton data
+Badminton data from video recognition
