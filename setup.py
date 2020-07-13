@@ -7,7 +7,7 @@ README = (HERE / "README.md").read_text()
 
 setup(
     name="badminton",
-    version="0.0.3",
+    version="0.0.4",
     description="Badminton data",
     long_description=README,
     long_description_content_type="text/markdown",
