@@ -6,8 +6,8 @@ HERE = pathlib.Path(__file__).parent
 README = (HERE / "README.md").read_text()
 
 setup(
-    name="microprediction",
-    version="0.0.1",
+    name="badminton",
+    version="0.0.2",
     description="Badminton data",
     long_description=README,
     long_description_content_type="text/markdown",
@@ -20,14 +20,14 @@ setup(
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.7",
     ],
-    packages=["microprediction","microprediction.live"],
+    packages=["badminton","badminton.live"],
     test_suite='pytest',
     tests_require=['pytest'],
     include_package_data=True,
     install_requires=["getjson"],
     entry_points={
         "console_scripts": [
-            "microprediction=microprediction.__main__:main",
+            "badminton=badminton.__main__:main",
         ]
      },
      )
